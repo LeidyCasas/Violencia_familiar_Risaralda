@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Estadístico - Violencia Intrafamiliar Risaralda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">Violencia Intrafamiliar Risaralda</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reporte.html" class="nav-link active">Reporte Estadístico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto y Recursos</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Reporte de Violencia Intrafamiliar en Risaralda</h2>
+                <p>Datos abiertos de la Policía Nacional - Visualización interactiva</p>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="container">
+                <div class="filter-group">
+                    <label for="year-select">Seleccionar año:</label>
+                    <select id="year-select">
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="municipio-select">Seleccionar municipio:</label>
+                    <select id="municipio-select">
+                        <option value="todos">Todos los municipios</option>
+                        <option value="pereira">Pereira</option>
+                        <option value="dosquebradas">Dosquebradas</option>
+                        <option value="santa-rosa">Santa Rosa de Cabal</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button id="generate-report-btn" class="btn-submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">Generar Reporte</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="container">
+                <div class="chart-container">
+                    <h3>Evolución anual de casos reportados</h3>
+                    <canvas id="annualChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Distribución por municipio (2023)</h3>
+                    <canvas id="municipioChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Tendencia mensual (2023)</h3>
+                    <canvas id="monthlyChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Datos obtenidos del Portal de Datos Abiertos de Colombia - Policía Nacional</p>
+            <p>Presentado por: Laura Garcia y Daniel Medina</p>
+            <p>&copy; 2025-2 - Reporte de Violencia Intrafamiliar Risaralda</p>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="graficos.js"></script>
+</body>
+</html>
