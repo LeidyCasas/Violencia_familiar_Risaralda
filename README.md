@@ -1,5 +1,9 @@
 # Proyecto Violencia Intrafamiliar en Risaralda
 
+### Presentado por:
+    Laura Garcia
+    Daniel Medina
+
 Este proyecto es un **sitio web informativo e interactivo** sobre la violencia intrafamiliar en el departamento de Risaralda, Colombia.  
 Su objetivo es **sensibilizar, informar y facilitar el acceso a recursos de apoyo para víctimas**, además de **mostrar datos estadísticos** de forma clara y accesible.
 
@@ -33,6 +37,7 @@ Transformar un archivo CSV con miles de filas (casos de violencia intrafamiliar 
 - **Filtros interactivos**:
   - Selección dinámica de **año** y **municipio**.
   - Los filtros se generan automáticamente a partir de los datos CSV.
+
 
 Ejemplo de lógica en `graficos.js`:
 ```javascript
