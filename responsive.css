@@ -1,0 +1,72 @@
+/* Responsive design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .banner-content h2 {
+        font-size: 2rem;
+    }
+
+    .stats-highlight {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        margin: 0.5rem 0;
+    }
+
+    .filter-group {
+        display: block;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    .resource-list,
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .chart-container {
+        padding: 1rem;
+    }
+}
